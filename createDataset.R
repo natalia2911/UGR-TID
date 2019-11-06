@@ -1,6 +1,6 @@
 library(dplyr)
 
-dataset <- read.csv("/home/alvaro/Documentos/TID/ks-projects-201801.csv")
+dataset <- read.csv("/home/alvaro/Documentos/TID/TID-UGR/datasets/ks-projects-original.csv")
 dataset <- select(dataset, -ID)
 colnames(dataset)[colnames(dataset) == "state"] <- "class"
 col_idx <- grep("class", names(dataset))
